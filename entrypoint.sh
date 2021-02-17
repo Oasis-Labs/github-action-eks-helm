@@ -3,6 +3,7 @@
 echo ${KUBE_CONFIG_DATA} | base64 -d > kubeconfig
 chmod go-r kubeconfig
 export KUBECONFIG=kubeconfig
+cat kubeconfig
 
 result="$($1)"
 status=$?
