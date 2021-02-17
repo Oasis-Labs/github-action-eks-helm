@@ -1,6 +1,7 @@
 #!/bin/sh -l
 
 echo ${KUBE_CONFIG_DATA} | base64 -d > kubeconfig
+chmod go-r kubeconfig
 export KUBECONFIG=kubeconfig
 
 result="$($1)"
