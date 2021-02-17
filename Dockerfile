@@ -1,4 +1,4 @@
-FROM alpine/helm:3.4
+FROM alpine/helm:3.4.2
 
 RUN apk add py-pip curl
 RUN pip install awscli
